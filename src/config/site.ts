@@ -23,7 +23,7 @@ const site = {
   // subtitle: decorative label shown below the name (uppercase, small text)
   navigation: [
     { name: "Home", subtitle: "", href: "/" },
-    { name: "Arbeitserfahrung", subtitle: "", href: "/posts" },
+    { name: "Arbeitserfahrung", subtitle: "", href: "/work" },
     { name: "Technologien und Projekte", subtitle: "", href: "/friends" },
     { name: "Ausbildung", subtitle: "", href: "/projects" },
     { name: "Über Mich", subtitle: "", href: "/about" },
@@ -36,10 +36,10 @@ const site = {
       href: "https://github.com/your-username",
       icon: "mdi:github",
     },
-    { 
+    {
       name: "Email",
       href: "mailto:contact@niklasbecker.at",
-      icon: "mdi:email"
+      icon: "mdi:email",
     },
   ],
 
@@ -62,10 +62,10 @@ const site = {
         label: "Status",
         value: "In einem Dienstverhältnis",
       },
-      { 
+      {
         icon: "mdi:location",
-        label: "Location", 
-        value: "Graz"
+        label: "Location",
+        value: "Graz",
       },
     ],
   },
@@ -163,7 +163,7 @@ const site = {
   // Customize these values to change the text displayed on pages
   labels: {
     postsTitle: "Arbeitserfahrung",
-    postsDescription: "Notes, thoughts, and technical musings",
+    //postsDescription: "Notes, thoughts, and technical musings",
     projectsTitle: "Projects",
     projectsDescription: "Small tools built for fun or to solve real problems.",
     friendsTitle: "Friends",
@@ -178,9 +178,9 @@ const site = {
       "The page you're looking for may have been removed or the link is broken.",
     endOfPost: "End of Post",
     tableOfContents: "Table of Contents",
-    searchPlaceholder: "Search posts, tags, or commands...",
-    searchNavigate: "Navigate",
-    commentSuccess: "Comment submitted",
+    //searchPlaceholder: "Search posts, tags, or commands...",
+    //searchNavigate: "Navigate",
+    //commentSuccess: "Comment submitted",
   },
 
   ogImage: "/og-image.png",

@@ -29,6 +29,25 @@ const posts = defineCollection({
     }),
 });
 
+const work = defineCollection({
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/work",
+  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string().max(128),
+      createdAt: z.coerce.date(),
+      updatedAt: z.coerce.date().optional(),
+      category: reference("categories"),
+      tags: z.array(reference("tags")).optional().default([]),
+      summary: z.string().optional().default(""),
+      cover: image().optional(),
+      draft: z.boolean().default(false),
+      new: z.boolean().default(false),
+    }),
+});
+
 const projects = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
@@ -38,11 +57,13 @@ const projects = defineCollection({
     title: z.string(),
     description: z.string(),
     tech: z.array(z.string()),
-    links: z.object({
-      homepage: z.string().url().optional(),
-      github: z.string().url().optional(),
-      demo: z.string().url().optional(),
-    }).optional(),
+    links: z
+      .object({
+        homepage: z.string().url().optional(),
+        github: z.string().url().optional(),
+        demo: z.string().url().optional(),
+      })
+      .optional(),
     status: z
       .enum(["planning", "in-progress", "completed", "archived"])
       .default("completed"),
@@ -104,6 +125,7 @@ const pages = defineCollection({
 
 export const collections = {
   posts,
+  work,
   projects,
   categories,
   tags,
