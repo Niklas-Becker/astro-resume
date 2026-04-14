@@ -10,7 +10,7 @@ const site = {
   // --- Site Metadata ---
   meta: {
     title: "Niklas Becker",
-    description: "A minimal Astro theme for personal websites",
+    description: "Online CV",
     author: "Niklas Becker",
     logo: "/logo.svg",
     ogImage: "/og-image.png",
@@ -22,11 +22,11 @@ const site = {
   // --- Navigation ---
   // subtitle: decorative label shown below the name (uppercase, small text)
   navigation: [
-    { name: "Home", subtitle: "Index", href: "/" },
-    { name: "Writing", subtitle: "Blog", href: "/posts" },
-    { name: "Projects", subtitle: "Works", href: "/projects" },
-    { name: "Friends", subtitle: "Links", href: "/friends" },
-    { name: "About", subtitle: "Me", href: "/about" },
+    { name: "Home", subtitle: "", href: "/" },
+    { name: "Arbeitserfahrung", subtitle: "", href: "/posts" },
+    { name: "Technologien und Projekte", subtitle: "", href: "/friends" },
+    { name: "Ausbildung", subtitle: "", href: "/projects" },
+    { name: "Über Mich", subtitle: "", href: "/about" },
   ],
 
   // --- Social Links ---
@@ -36,7 +36,11 @@ const site = {
       href: "https://github.com/your-username",
       icon: "mdi:github",
     },
-    { name: "Email", href: "mailto:hello@example.com", icon: "mdi:email" },
+    { 
+      name: "Email",
+      href: "mailto:contact@niklasbecker.at",
+      icon: "mdi:email"
+    },
   ],
 
   friendCard: {
@@ -56,9 +60,13 @@ const site = {
       {
         icon: "mdi:explore",
         label: "Status",
-        value: "Building something cool",
+        value: "In einem Dienstverhältnis",
       },
-      { icon: "mdi:location", label: "Location", value: "Earth" },
+      { 
+        icon: "mdi:location",
+        label: "Location", 
+        value: "Graz"
+      },
     ],
   },
 
@@ -79,10 +87,10 @@ const site = {
 
   // --- Feature Toggles ---
   features: {
-    search: true,
-    rss: true,
+    search: false,
+    rss: false,
     // Auto-mark posts as "new" if published within this many days (0 to disable)
-    newPostDays: 7,
+    newPostDays: 0,
   },
 
   // --- Tools Page Data ---
@@ -154,7 +162,7 @@ const site = {
   // --- UI Labels ---
   // Customize these values to change the text displayed on pages
   labels: {
-    postsTitle: "Writing",
+    postsTitle: "Arbeitserfahrung",
     postsDescription: "Notes, thoughts, and technical musings",
     projectsTitle: "Projects",
     projectsDescription: "Small tools built for fun or to solve real problems.",

@@ -43,7 +43,7 @@
 
 .dark {
   /* --- Dark Mode: Deep Moss --- */
-  --background: oklch(0.14 0.02 265);
+  --background: oklch(17.137% 0.03043 268.196);
   --foreground: oklch(0.92 0.005 265);
 
   --card: oklch(0.18 0.02 265);
