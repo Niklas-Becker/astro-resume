@@ -1,5 +1,3 @@
-[]
-/*
 [
   { "name": "Astro", "slug": "astro" },
   { "name": "Tailwind CSS", "slug": "tailwindcss" },
@@ -9,4 +7,3 @@
   { "name": "Markdown", "slug": "markdown" },
   { "name": "Tutorial", "slug": "tutorial" }
 ]
-*/

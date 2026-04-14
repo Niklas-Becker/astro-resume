@@ -178,9 +178,9 @@ const site = {
       "The page you're looking for may have been removed or the link is broken.",
     endOfPost: "End of Post",
     tableOfContents: "Table of Contents",
-    //searchPlaceholder: "Search posts, tags, or commands...",
-    //searchNavigate: "Navigate",
-    //commentSuccess: "Comment submitted",
+    searchPlaceholder: "Search posts, tags, or commands...",
+    searchNavigate: "Navigate",
+    commentSuccess: "Comment submitted",
   },
 
   ogImage: "/og-image.png",
