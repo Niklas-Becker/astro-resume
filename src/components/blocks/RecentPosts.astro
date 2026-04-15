@@ -1,5 +1,5 @@
 ---
-import PostPreview from "@/components/blocks/PostPreview.astro";
+import PostPreview from "@/components/blocks/WorkPreview.astro";
 import { getRecentPosts } from "@/utils/post";
 import { Icon } from "astro-icon/components";
 
@@ -11,12 +11,12 @@ const recentPosts = await getRecentPosts(5);
     <p
       class="text-[11px] font-bold tracking-[0.4em] text-muted-foreground uppercase opacity-60"
     >
-      Latest
+      Arbeitserfahrung
     </p>
     <a
-      href="/posts"
+      href="/work"
       class="flex items-center gap-1 border-b border-transparent text-[11px] text-muted-foreground hover:border-primary hover:text-primary"
-      >View all <Icon name="mdi:arrow-right" /></a
+      >Alle ansehen <Icon name="mdi:arrow-right" /></a
     >
   </div>
 

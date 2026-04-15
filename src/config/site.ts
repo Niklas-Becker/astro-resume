@@ -55,16 +55,16 @@ const site = {
     greeting: "👋 Hallo, ich bin Niklas",
     // Supports HTML. Use <span class="font-medium text-foreground underline decoration-primary/30"> to highlight keywords
     description:
-      'A minimal personal website theme built with <span class="font-medium text-foreground underline decoration-primary/30">Astro</span> and <span class="font-medium text-foreground underline decoration-primary/30">Tailwind CSS</span>.',
+      '',
     cards: [
       {
         icon: "mdi:explore",
-        label: "Status",
-        value: "In einem Dienstverhältnis",
+        label: "Lebenseinstellung",
+        value: "Optimistisch",
       },
       {
         icon: "mdi:location",
-        label: "Location",
+        label: "Lebensort",
         value: "Graz",
       },
     ],
