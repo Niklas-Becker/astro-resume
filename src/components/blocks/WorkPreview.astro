@@ -27,8 +27,11 @@ const isNew =
 ---
 
 <article
-  class="group flex cursor-pointer items-center justify-between border-b border-border/40 py-6 last:border-0"
->
+  class="relative group flex cursor-pointer items-center justify-between border-b border-border/40 py-6 last:border-0"
+><a
+      href={`/work/${post.id}`}
+      class="absolute inset-0 -indent-[9999px]"
+    >
   <div>
     <a
       href={`/work/${post.id}`}
@@ -64,4 +67,5 @@ const isNew =
   >
     <Icon name="mdi:arrow-right" />
   </span>
+  </a>
 </article>
