@@ -111,6 +111,19 @@ const friends = defineCollection({
   }),
 });
 
+const education = defineCollection({
+  loader: file("./src/content/miscs/education.json"),
+  schema: z.object({
+    order: z.number().int().nonnegative().optional().default(0),
+    name: z.string().max(64),
+    description: z.string().optional().describe("One line string"),
+    from: z.coerce.date(),
+    to: z.coerce.date().optional(),
+    link: z.string().url(),
+    avatar: z.string(),
+  }),
+});
+
 const pages = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
@@ -129,5 +142,6 @@ export const collections = {
   categories,
   tags,
   friends,
+  education,
   pages,
 };

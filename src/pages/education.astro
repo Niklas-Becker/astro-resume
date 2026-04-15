@@ -2,6 +2,15 @@
 import site from "@/config/site";
 import Layout from "@/layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
+import { getCollection } from "astro:content";
+import Toast from "@/components/blocks/Toast.astro";
+import site from "@/config/site";
+import { formatDate } from "@/utils/date";
+
+import { Image } from "astro:assets";
+const friends = (await getCollection("education")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
 
 const about = await getEntry("pages", "ausbildung");
 const { Content } = await render(about!);
@@ -12,6 +21,44 @@ const { Content } = await render(about!);
     <div class="prose dark:prose-invert">
       <Content />
     </div>
+
+      <div class="grid grid-cols-1 gap-4 mt-8">
+        {friends.length === 0 ? (
+          <div class="col-span-full py-12 text-center">
+            <p class="text-sm text-muted-foreground">No friends yet.</p>
+          </div>
+        ) : (
+          friends.map((friend) => (
+            <a
+              href={friend.data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-5 rounded-2xl border border-border/40 p-4 hover:bg-muted/30"
+            >
+              <Image
+                src={friend.data.avatar}
+                width={48}
+                height={48}
+                alt={friend.data.name}
+                loading={"lazy"}
+                class="rounded-xl bg-muted transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110"
+              />
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-foreground/80 group-hover:text-primary">
+                  {friend.data.name}
+                </span>
+                <span class="line-clamp-1 text-[13px] text-muted-foreground">
+                  {friend.data.description}
+                </span>
+                <span class="mt-2 font-mono text-[11px] text-muted-foreground italic opacity-60">
+                  {formatDate(friend.data.from)} - {formatDate(friend.data.to)}
+                </span>
+              </div>
+            </a>
+          ))
+        )}
+      </div>
+
 
     <footer class="mt-14 space-y-6">
       <h4 class="text-[10px] font-bold tracking-[0.3em] text-primary uppercase">
