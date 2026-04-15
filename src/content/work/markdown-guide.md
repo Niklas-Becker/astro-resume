@@ -1,8 +1,8 @@
 ---
 title: Markdown Guide
-createdAt: 2026-01-02
-category: technology
-tags: [markdown, tutorial]
+workFrom: 2026-03-03
+workTo: 2026-07-01
+company: Mides Healthcare Technologies GmbH
 summary: A guide to all supported Markdown features in Breeze theme.
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Hello World - Welcome to Breeze
-createdAt: 2026-01-01
-category: technology
-tags: [astro, tailwindcss]
+workFrom: 2026-03-03
+workTo: 2026-07-01
+company: Mides Healthcare Technologies GmbH
 summary: Welcome to Breeze, a minimal Astro theme for personal websites.
 ---
 

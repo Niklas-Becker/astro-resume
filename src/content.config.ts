@@ -37,10 +37,9 @@ const work = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string().max(128),
-      createdAt: z.coerce.date(),
-      updatedAt: z.coerce.date().optional(),
-      category: reference("categories"),
-      tags: z.array(reference("tags")).optional().default([]),
+      workFrom: z.coerce.date(),
+      workTo: z.coerce.date().optional(),
+      company: z.string().optional().default(""),
       summary: z.string().optional().default(""),
       cover: image().optional(),
       draft: z.boolean().default(false),

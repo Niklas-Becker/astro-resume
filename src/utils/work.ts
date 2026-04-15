@@ -6,8 +6,8 @@ export const getPosts = async () => {
   });
 
   return posts.sort((a, b) => {
-    const aDate = new Date(a.data.createdAt).getTime();
-    const bDate = new Date(b.data.createdAt).getTime();
+    const aDate = new Date(a.data.workFrom).getTime();
+    const bDate = new Date(b.data.workFrom).getTime();
     return bDate - aDate;
   });
 };

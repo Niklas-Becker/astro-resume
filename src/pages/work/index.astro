@@ -6,7 +6,7 @@ import site from "@/config/site";
 
 const posts = await getPosts();
 const years = [
-  ...new Set(posts.map((post) => post.data.createdAt.getFullYear())),
+  ...new Set(posts.map((post) => post.data.workFrom.getFullYear())),
 ];
 ---
 
@@ -32,7 +32,7 @@ const years = [
             </h3>
             <div> <!-- class="space-y-8 -->
               {posts
-                .filter((post) => post.data.createdAt.getFullYear() === year)
+                .filter((post) => post.data.workFrom.getFullYear() === year)
                 .map((post) => (
                   <PostPreview post={post} />
                 ))}
