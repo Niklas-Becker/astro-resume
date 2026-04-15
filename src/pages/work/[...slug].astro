@@ -23,6 +23,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
+const { workFrom, workTo } = post.data;
 ---
 
 <Layout title={post.data.title} description={post.data.summary}>
@@ -56,8 +57,10 @@ const { Content, headings } = await render(post);
               >{formatDate(post.data.workFrom)}</span
             >
           </div>
-          <span class="h-3 w-px bg-border"></span>
-            <span>{formatDate(post.data.workTo)}</span>  
+          {post.data.workTo && (
+            <span class="h-3 w-px bg-border"></span>
+            <span>{formatDate(post.data.workTo)}</span>
+            )}
         </div>
 
         <!-- <div

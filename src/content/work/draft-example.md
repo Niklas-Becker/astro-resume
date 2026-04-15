@@ -1,7 +1,7 @@
 ---
 title: Draft Post Example
 workFrom: 2026-03-03
-workTo: 2026-07-01
+#workTo:
 company: Mides Healthcare Technologies GmbH
 summary: This is a draft post that won't appear in production builds.
 draft: true
