@@ -38,12 +38,12 @@
   --callout-info: oklch(0.65 0.12 250);
   --callout-warning: oklch(0.7 0.15 85);
   --callout-danger: oklch(0.62 0.18 28);
-  --callout-success: oklch(56.229% 0.13885 244.471);
+  --callout-success: oklch(0.72 0.14 260);
 }
 
 .dark {
   /* --- Dark Mode: Deep Moss --- */
-  --background: oklch(17.137% 0.03043 268.196);
+  --background: oklch(0.14 0.004 265);
   --foreground: oklch(0.92 0.005 265);
 
   --card: oklch(0.18 0.02 265);
@@ -55,13 +55,13 @@
   --muted: oklch(0.28 0.02 260);
   --muted-foreground: oklch(0.75 0.015 265);
 
-  --border: oklch(0.26 0.02 165);
+  --border: oklch(0.26 0.02 265);
   --shadow-main: 0 30px 60px -15px oklch(0 0 0 / 0.5);
 
   --callout-info: oklch(0.75 0.12 250);
   --callout-warning: oklch(0.8 0.15 85);
   --callout-danger: oklch(0.75 0.18 28);
-  --callout-success: oklch(56.229% 0.13885 244.471);
+  --callout-success: oklch(0.72 0.14 260);
 }
 
 @theme inline {

@@ -1,22 +1,22 @@
 [
   {
     "id": "hbla",
-    "order": 1,
-    "name": "HBLA Oberwart Tourismus und Gastronomie",
-    "description": "Eine Beschreibung",
-    "from": "2010-10-10",
-    "to": "2010-10-10",
-    "link": "https://github.com",
+    "order": 10,
+    "name": "Abschluss: Reife- und Diplomprüfung",
+    "description": "HBLA Oberwart Zweig Tourismus und Gastronomie",
+    "from": "2010-09-01",
+    "to": "2016-10-01",
+    "link": "https://business-campus-oberwart.at/BCO/",
     "avatar": "/logo.svg"
   },
   {
-    "id": "beeze",
-    "order": 10,
-    "name": "Breeze Theme",
-    "description": "A minimal Astro theme",
-    "from": "2010-10-10",
-    "to": "2010-10-10",
-    "link": "https://github.com",
+    "id": "bit-kurs",
+    "order": 1,
+    "name": "Ausbildung zum System- und Netzwerkadministrator",
+    "description": "bit-Schulungscenter Graz",
+    "from": "2022-05-01",
+    "to": "2022-12-31",
+    "link": "https://www.bitschulungscenter.at/",
     "avatar": "/logo.svg"
   }
 ]
