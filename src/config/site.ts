@@ -24,18 +24,13 @@ const site = {
   navigation: [
     { name: "Home", subtitle: "", href: "/" },
     { name: "Arbeitserfahrung", subtitle: "", href: "/work" },
-    { name: "Technologien und Projekte", subtitle: "", href: "/friends" },
-    { name: "Ausbildung", subtitle: "", href: "/projects" },
+    { name: "Technologien und Projekte", subtitle: "", href: "/technologies" },
+    { name: "Ausbildung", subtitle: "", href: "/education" },
     { name: "Über Mich", subtitle: "", href: "/about" },
   ],
 
   // --- Social Links ---
   social: [
-    {
-      name: "GitHub",
-      href: "https://github.com/your-username",
-      icon: "mdi:github",
-    },
     {
       name: "Email",
       href: "mailto:contact@niklasbecker.at",
