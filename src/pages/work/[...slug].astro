@@ -55,24 +55,14 @@ const tags = (await getEntries(post.data.tags)).filter((value) => value);
           <div class="flex items-center gap-1.5">
             <Icon name={"mdi:calendar-blank"} />
             <span
-              id="post-date"
-              data-updated={`${post.data.updatedAt ? "Updated " + formatDate(post.data.updatedAt) : "Not updated"}`}
-              >{formatDate(post.data.createdAt)}{
-                post.data.updatedAt ? " (edited)" : ""
-              }</span
+              >{formatDate(post.data.createdAt)}</span
             >
           </div>
           <span class="h-3 w-px bg-border"></span>
-          <a
-            href={`/categories/${category.data.slug}`}
-            class="flex cursor-pointer items-center gap-1.5 transition-colors hover:text-primary"
-          >
-            <Icon name={"mdi:category-outline"} />
-            <span>{category.data.name}</span>
-          </a>
+            <span>{formatDate(post.data.updatedAt)}</span>  
         </div>
 
-        <div
+        <!-- <div
           class="flex items-center gap-4 rounded-full border border-border/20 bg-muted/20 px-3 py-1 text-muted-foreground/60"
         >
           <div class="flex items-center gap-1.5">
@@ -94,10 +84,10 @@ const tags = (await getEntries(post.data.tags)).filter((value) => value);
               class="artalk-comment-count"
               data-page-key={Astro.url.pathname}
               class="font-bold text-foreground/80">-</span
-            >
+            > 
             <span class="text-[10px] uppercase opacity-90">Comments</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -115,26 +105,6 @@ const tags = (await getEntries(post.data.tags)).filter((value) => value);
     >
       <Content components={{ a: Link, img: Img }} />
     </div>
-
-    <div
-      class="animate-in fade-in mt-12 mb-8 flex flex-wrap gap-2 duration-1000"
-    >
-      {
-        tags.map((tag) => (
-          <a
-            href={`/tags/${tag.data.slug}`}
-            class="group flex items-center gap-1.5 rounded-xl border border-border/50 bg-muted/30 px-3 py-1.5 transition-all hover:border-primary/40 hover:bg-card"
-          >
-            <span class="font-mono text-xs text-primary/40 italic group-hover:text-primary">
-              #
-            </span>
-            <span class="text-xs font-medium text-muted-foreground transition-colors group-hover:text-foreground">
-              {tag.data.name}
-            </span>
-          </a>
-        ))
-      }
-    </div>
   </article>
 
   <footer class="mt-16 space-y-12 px-8 md:px-16">
@@ -148,17 +118,10 @@ const tags = (await getEntries(post.data.tags)).filter((value) => value);
         <span class="transition-transform group-hover:-translate-x-1">
           <Icon name="mdi:arrow-left" size={14} />
         </span>
-        {site.labels.backToPosts}
+        Zurück zur Übersicht
       </a>
-      <div
-        class="font-mono text-[10px] tracking-widest text-muted-foreground/30 uppercase"
-      >
-        {site.labels.endOfPost}
-      </div>
     </div>
-
     <Toast />
-    <Comments />
   </footer>
 </Layout>
 

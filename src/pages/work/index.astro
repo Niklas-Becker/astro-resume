@@ -21,9 +21,6 @@ const years = [
       <h2 class="mb-4 text-3xl font-bold tracking-tight">
         {site.labels.postsTitle}
       </h2>
-      <p class="text-sm font-light text-muted-foreground italic">
-        {site.labels.postsDescription} — {posts.length} posts.
-      </p>
     </header>
 
     <div class="space-y-16">
@@ -33,7 +30,7 @@ const years = [
             <h3 class="year text-4xl tracking-tighter text-foreground/40">
               {year}
             </h3>
-            <div class="space-y-8">
+            <div> <!-- class="space-y-8 -->
               {posts
                 .filter((post) => post.data.createdAt.getFullYear() === year)
                 .map((post) => (

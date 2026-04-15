@@ -9,6 +9,7 @@ const langMap: Record<string, () => Promise<any>> = {
   "zh-CN": () => import("dayjs/locale/zh-cn"),
   "zh-TW": () => import("dayjs/locale/zh-tw"),
   en: () => import("dayjs/locale/en"),
+  de: () => import("dayjs/locale/de"),
   ja: () => import("dayjs/locale/ja"),
   ko: () => import("dayjs/locale/ko"),
 };
@@ -20,7 +21,7 @@ if (loader) {
   dayjs.locale(lang.toLowerCase());
 }
 
-export function formatDate(d: string | Date, format: string = "YYYY.MM.DD") {
+export function formatDate(d: string | Date, format: string = "MMMM YYYY") {
   const date = dayjs(d);
   return date.format(format);
 }
