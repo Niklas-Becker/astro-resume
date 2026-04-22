@@ -1,0 +1,100 @@
+[
+  {
+    "id": "Windows Server",
+    "order": 0,
+    "name": "Windows Server",
+    "description": "Administration von Windows Server 2019 und 2022",
+    "avatar": "/windows-server.png"
+  },
+  {
+    "id": "FortiNet Firewalls",
+    "order": 0,
+    "name": "FortiNet Firewalls",
+    "description": "Komplette Konfiguration und Administration von 100E & 100F Geräten",
+    "avatar": "/Fortinet-logomark-rgb-red.svg"
+  },
+  {
+    "id": "Exchange 2019",
+    "order": 0,
+    "name": "Exchange 2019",
+    "description": "On-Prem Betrieb eines Exchange 2019 Server",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Microsoft_Exchange_%282019-present%29.svg"
+  },
+  {
+    "id": "Avaya IP 500",
+    "order": 0,
+    "name": "Avaya Telefonanlage",
+    "description": "Instandhaltung und Administration einer Avaya IP Office 500",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Avaya_Logo.svg"
+  },
+  {
+    "id": "BMDNTCS",
+    "order": 0,
+    "name": "BMDNTCS",
+    "description": "Administration von BMDNTCS Instanzen",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/2/29/BMD-Logo-Standard.svg"
+  },
+  {
+    "id": "FortiNet Firewalls",
+    "order": 0,
+    "name": "FortiNet Firewalls",
+    "description": "Komplette Konfiguration von 100E & 100F",
+    "avatar": "/Fortinet-logomark-rgb-red.svg"
+  },
+  {
+    "id": "PowerShell",
+    "order": 0,
+    "name": "PowerShell",
+    "description": "Automatisierung und Administration der Windows Umgebung durch PowerShell",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png"
+  },
+  {
+    "id": "Hyper-V",
+    "order": 0,
+    "name": "Hyper-V",
+    "description": "Administrierung und Replikation von VMs auf mehreren Hyper-V Hosts",
+    "avatar": "/Microsoft-Hyper-v.svg"
+  },
+  {
+    "id": "Proxmox",
+    "order": 0,
+    "name": "Proxmox",
+    "description": "Home-Labbing mit einem Proxmox Cluster",
+    "avatar": "/proxmox-logo-stacked-color.svg"
+  },
+  {
+    "id": "Docker",
+    "order": 0,
+    "name": "Docker",
+    "description": "Management von diversen Containern und Docker-Netzwerken via Docker, Docker Compose und den Docker Management Plattformen Komodo und Portainer",
+    "avatar": "/docker-mark-ocean-blue.svg"
+  },
+  {
+    "id": "Cloudflare",
+    "order": 0,
+    "name": "Cloudflare DNS, Pages, Zero Trust",
+    "description": "Management von DNS Einträgen, statischen Webpages (wie dieser hier) und Zero-Trust-Tunneln via Cloudflare",
+    "avatar": "/CF-Logo 1.png"
+  },
+  {
+    "id": "Linux",
+    "order": 0,
+    "name": "Linux: Fedora, Debian, Ubuntu",
+    "description": "Erfahrung im Aufsetzen und Administrieren verschiedener Linux Server und Workstations durch privaten wie beruflichen Kontext",
+    "avatar": "/Tux.svg"
+  },
+  {
+    "id": "Python",
+    "order": 0,
+    "name": "Python",
+    "description": "Erstellung von Skripts und Datenautomatisierungen",
+    "avatar": "/python-logo-only.svg"
+  },
+  {
+    "id": "CMS Systeme",
+    "order": 0,
+    "name": "CMS Systeme",
+    "description": "Aufbau von Websites und Webshops mit den CMS Systemen Wordpress und Ghost sowie den Static-Site-Generators Astro (diese Website) und Hugo",
+    "avatar": "/WordPress-logotype-wmark.png"
+  }
+]

@@ -7,7 +7,7 @@
     "from": "2010-09-01",
     "to": "2016-10-01",
     "link": "https://business-campus-oberwart.at/BCO/",
-    "avatar": "/logo.svg"
+    "avatar": "https://business-campus-oberwart.at/BCO/wp-content/uploads/2023/10/BCO-150x150.png"
   },
   {
     "id": "bit-kurs",
@@ -17,6 +17,6 @@
     "from": "2022-05-01",
     "to": "2022-12-31",
     "link": "https://www.bitschulungscenter.at/",
-    "avatar": "/logo.svg"
+    "avatar": "https://static.wixstatic.com/media/525088_e5dfa7032a57467391b8734325a93dcc%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/525088_e5dfa7032a57467391b8734325a93dcc%7Emv2.jpg"
   }
 ]

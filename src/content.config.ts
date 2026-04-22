@@ -124,6 +124,17 @@ const education = defineCollection({
   }),
 });
 
+const technologies = defineCollection({
+  loader: file("./src/content/miscs/technologies.json"),
+  schema: z.object({
+    order: z.number().int().nonnegative().optional().default(0),
+    name: z.string().max(64),
+    description: z.string().optional().describe("Two line string"),
+    link: z.string().url().optional().default("/technologies"),
+    avatar: z.string(),
+  }),
+});
+
 const pages = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
@@ -143,5 +154,6 @@ export const collections = {
   tags,
   friends,
   education,
+  technologies,
   pages,
 };
