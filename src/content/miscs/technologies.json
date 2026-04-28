@@ -23,7 +23,7 @@
   {
     "id": "Avaya IP 500",
     "order": 0,
-    "name": "Avaya Telefonanlage",
+    "name": "Avaya",
     "description": "Instandhaltung und Administration einer Avaya IP Office 500",
     "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Avaya_Logo.svg"
   },
@@ -96,5 +96,12 @@
     "name": "CMS Systeme",
     "description": "Aufbau von Websites und Webshops mit den CMS Systemen Wordpress und Ghost sowie den Static-Site-Generators Astro (diese Website) und Hugo",
     "avatar": "/WordPress-logotype-wmark.png"
+  },
+  {
+    "id": "Zammad Ticketsystem",
+    "order": 0,
+    "name": "Zammad",
+    "description": "Setup, Einführung, Administration und aktive Nutzung des Open-Source Zammad Ticketsystem",
+    "avatar": "/zammad.svg"
   }
 ]
